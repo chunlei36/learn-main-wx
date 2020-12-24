@@ -1,0 +1,120 @@
+page {
+  height: 100vh;
+  line-height: 150%;
+  font-size: 28rpx;
+  background-color: #f8f8f8;
+}
+.muted {
+  color: #999;
+}
+picker, input, button {
+  font-size: inherit;
+}
+.page-loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #999;
+}
+.flexbox,
+.flex-center {
+  display: flex;
+}
+
+.flex-center {
+  align-items: center;
+}
+
+.flex-content-center {
+  justify-content: center
+}
+
+.flex-1 {
+  width: 0;
+  flex: 1;
+}
+.flex-2 {
+  width: 0;
+  flex: 2;
+}
+.flex-3 {
+  width: 0;
+  flex: 3;
+}
+.hide {
+  display: none;
+}
+button::after {
+  border: 0 none;
+}
+.tabbar-holder {
+  height: 120rpx;
+  padding-bottom: constant(safe-area-inset-bottom);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+.tabbar-wrap {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  height: 104rpx;
+  padding: 16rpx 20rpx 0;
+  border-top: 1px solid #eee;
+  line-height: 88rpx;
+  background-color: #fff;
+  text-align: center;
+  padding-bottom: constant(safe-area-inset-bottom);
+  padding-bottom: env(safe-area-inset-bottom);
+  .submit {
+    line-height: inherit;
+    background-color: #f64;
+    color: #fff;
+    border-radius: 0;
+  }
+}
+
+.ellipsis-1 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.launch-app{
+  position: fixed;
+  z-index: 10;
+  bottom: 150rpx;
+  right: 0;
+  background: linear-gradient(to right, #f64, #ff8a65);
+  font-size: 24rpx;
+  line-height: 54rpx;
+  padding: 0 27rpx;
+  border: 3rpx solid #fff;
+  border-right: none;
+  box-shadow: 0 0 10rpx #ddd;
+  text-shadow: 0 4rpx 4rpx #ee5938;
+  border-top-left-radius: 30rpx;
+  border-bottom-left-radius: 30rpx;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  color: #fff;
+  .launch-app-in-iphonex {
+    bottom: 218rpx;
+  }
+}
+/*----------  模块：公用样式 开始  ----------*/
+.text-warning {
+  color: #f64;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+/*----------  模块：公用样式 结束  ----------*/
+
+::-webkit-scrollbar {
+  display: none;
+}

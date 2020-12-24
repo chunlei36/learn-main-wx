@@ -1,0 +1,7 @@
+{
+    "compilation-args": {
+        "common": {
+            "enhance": true
+        }
+    }
+}
